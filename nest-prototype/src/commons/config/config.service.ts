@@ -6,7 +6,6 @@ export class ConfigService {
 
   constructor(filePath: string) {
     this.envConfig = dotenv.parse(fs.readFileSync(filePath));
-    this.envConfig .DATABASE_HOST = process.env.DATABASE_HOST ? process.env.DATABASE_HOST : this.envConfig .DATABASE_HOST;
     process.env = {...this.envConfig}
   }
 

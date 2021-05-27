@@ -25,7 +25,7 @@ A-LISTWARE TASK
   ``` 
   docker-compose -v
   
-# Run APPLICATION
+# Run APPLICATION in docker
 * IN ROOT FOLDER 
     ```bash
     cd nest-prototype/docker-compose
@@ -35,4 +35,16 @@ A-LISTWARE TASK
 ```bash
     cd react-prototype/docker-compose
     docker-compose -f docker-compose.dev.yml up
+```
+
+# Run APPLICATION with node
+* IN ROOT FOLDER 
+    ```bash
+    cd nest-prototype
+    npm run start:dev
+  ```
+* IN ROOT FOLDER 
+```bash
+    cd react-prototype
+    npm run start
 ```
