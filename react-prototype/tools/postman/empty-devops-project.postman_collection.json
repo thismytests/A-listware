@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "001b365b-daee-452e-b0a6-7162468f387e",
+		"name": "nest-prototype",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "login",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "login",
+									"value": "login",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/auth/login?login=login&password=password",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "login",
+									"value": "login"
+								},
+								{
+									"key": "password",
+									"value": "password"
+								}
+							]
+						},
+						"description": "postman-echo.com/get"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "protected routes",
+			"item": [
+				{
+					"name": "test",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/test/testedname1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"test",
+								"testedname1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "name",
+									"disabled": true
+								}
+							]
+						},
+						"description": "postman-echo.com/get"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "unprotected routes",
+			"item": [
+				{
+					"name": "test",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "login",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/test/testedname1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"test",
+								"testedname1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "name",
+									"disabled": true
+								}
+							]
+						},
+						"description": "postman-echo.com/get"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

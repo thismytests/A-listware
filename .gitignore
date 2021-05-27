@@ -1,0 +1,66 @@
+.idea
+# compiled output
+nest-prototype/dist
+nest-prototype/node_modules
+
+# Logs
+nest-prototype/logs
+nest-prototype/*.log
+nest-prototype/npm-debug.log*
+nest-prototype/yarn-debug.log*
+nest-prototype/yarn-error.log*
+nest-prototype/lerna-debug.log*
+
+# OS
+nest-prototype/.DS_Store
+
+# Tests
+nest-prototype/coverage
+nest-prototype/.nyc_output
+
+# IDEs and editors
+nest-prototype/.idea
+nest-prototype/.project
+nest-prototype/.classpath
+.c9/
+nest-prototype/*.launch
+nest-prototype/.settings/
+nest-prototype/*.sublime-workspace
+
+# IDE - VSCode
+nest-prototype/.vscode/*
+nest-prototype/!.vscode/settings.json
+nest-prototype/!.vscode/tasks.json
+nest-prototype/!.vscode/launch.json
+nest-prototype/!.vscode/extensions.json
+
+
+# REACT-PROTOTYPE
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+react-prototype/.idea
+
+# dependencies
+react-prototype/node_modules
+react-prototype/.pnp
+react-prototype/.pnp.js
+
+# testing
+react-prototype/coverage
+
+# production
+react-prototype/build
+
+# misc
+react-prototype/.DS_Store
+react-prototype/.env.local
+react-prototype/.env.development.local
+react-prototype/.env.test.local
+react-prototype/.env.production.local
+
+react-prototype/npm-debug.log*
+react-prototype/yarn-debug.log*
+react-prototype/yarn-error.log*
+
+react-prototype/package-lock.json
+react-prototype/yarn.lock
