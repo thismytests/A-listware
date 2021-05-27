@@ -13,10 +13,16 @@ A-LISTWARE TASK
 
 * Installed [node.js](https://nodejs.org/uk/download/)
 
-* Installed [postman](https://www.postman.com/downloads/)
+* Installed [docker](https://docs.docker.com/engine/install/)
+
+* Installed [docker-compose](https://docs.docker.com/compose/install/)
 
 ## Check dependencies
 
+* nodejs
+  ``` 
+  node -v
+  
 * docker
   ``` 
   docker -v
@@ -27,7 +33,7 @@ A-LISTWARE TASK
   
 # Run APPLICATION in docker
 * IN ROOT FOLDER 
-    ```bash
+```bash
     cd nest-prototype/docker-compose
     docker-compose -f docker-compose.dev.yml up
   ```
@@ -37,14 +43,16 @@ A-LISTWARE TASK
     docker-compose -f docker-compose.dev.yml up
 ```
 
-# Run APPLICATION with node
+# Run APPLICATION with nodejs
 * IN ROOT FOLDER 
-    ```bash
+ ```bash
     cd nest-prototype
+    npm i
     npm run start:dev
   ```
 * IN ROOT FOLDER 
 ```bash
     cd react-prototype
+    npm i 
     npm run start
 ```
