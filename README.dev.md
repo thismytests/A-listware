@@ -34,7 +34,7 @@ A-LISTWARE TASK
 # Run APPLICATION in docker
 * IN ROOT FOLDER 
 ```bash
-    cd nest-prototype/docker-compose
+    cd nest-prototype/docker-compose-backend
     docker-compose -f docker-compose.dev.yml up
   ```
 * IN ROOT FOLDER 
